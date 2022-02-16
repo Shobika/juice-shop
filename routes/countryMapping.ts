@@ -11,9 +11,7 @@ module.exports = function countryMapping (config = require('config')) {
     try {
       const countryMapping = config.get('ctf.countryMapping')
       if (!countryMapping) {
-        throw new Error('No country mapping found!')
-        if(unexpectedCondition) {
-          alert("Unexpected Condition");
+        alert("Unexpected Condition");
         }
       } else {
         res.send(countryMapping)
