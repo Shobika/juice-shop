@@ -8,4 +8,5 @@ node {
       sh "${scannerHome}/bin/sonar-scanner"
     }
   }
+
 }
