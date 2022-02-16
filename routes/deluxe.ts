@@ -20,6 +20,7 @@ module.exports.upgradeToDeluxe = function upgradeToDeluxe () {
     if (req.body.paymentMode === 'wallet') {
       const wallet = await models.Wallet.findOne({ where: { UserId: req.body.UserId } })
       if (wallet.balance < 49) {
+       Debug.write("loop index is " + i);
         res.status(400).json({ status: 'error', error: 'Insuffienct funds in Wallet' })
         return
       } else {
