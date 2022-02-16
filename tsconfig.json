@@ -43,4 +43,7 @@
   "ts-node": {
     "transpileOnly": true  // TODO Allows ts-node to run code with compile errors ignored. Remove this line after ts migration.
   }
+
 }
+
+
