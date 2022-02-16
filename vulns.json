@@ -1,0 +1,11 @@
+types:
+- "CWE-79"
+- "CWE-749"
+- "A7:2017"
+- "WASC-8"
+flags:
+- "DomSanitizer"
+- "bypassSecurityTrustHtml"
+- "q="
+- "#/search"
+- "main-es[0-9]*.js"
